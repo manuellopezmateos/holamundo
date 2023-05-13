@@ -11,12 +11,14 @@ package holamundo;
 public class Coche {
 
     private int numero;
+    private int kilometros;
     private String matricula;
     private String modelo;
     private String conductor;
 
-    public Coche(int numero, String matricula, String modelo, String conductor) {
+    public Coche(int numero, int kilometros, String matricula, String modelo, String conductor) {
         this.numero = numero;
+        this.kilometros = kilometros;
         this.matricula = matricula;
         this.modelo = modelo;
         this.conductor = conductor;
@@ -47,10 +49,18 @@ public class Coche {
     }
 
     public String getConductor() {
-        return modelo;
+        return conductor;
     }
 
     public void setConductor(String conductor) {
         this.conductor = conductor;
+    }
+
+    public int getKilometros() {
+        return kilometros;
+    }
+
+    public void setKilometros(int kilometros) {
+        this.kilometros = kilometros;
     }
 }
