@@ -1,20 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package holamundo;
 
-/**
- *
- * @author fp
- */
 public class Holamundo {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Coche c = new Coche(1,"1641GCJ","Peugeot");
+        String matricula = c.getMatricula();
     }
     
 }
