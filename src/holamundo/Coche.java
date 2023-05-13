@@ -9,14 +9,17 @@ package holamundo;
  * @author fp
  */
 public class Coche {
+
     private int numero;
     private String matricula;
     private String modelo;
+    private String conductor;
 
-    public Coche(int numero, String matricula, String modelo) {
+    public Coche(int numero, String matricula, String modelo, String conductor) {
         this.numero = numero;
         this.matricula = matricula;
         this.modelo = modelo;
+        this.conductor = conductor;
     }
 
     public int getNumero() {
@@ -41,5 +44,13 @@ public class Coche {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public String getConductor() {
+        return modelo;
+    }
+
+    public void setConductor(String conductor) {
+        this.conductor = conductor;
     }
 }
