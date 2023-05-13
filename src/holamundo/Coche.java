@@ -11,10 +11,12 @@ package holamundo;
 public class Coche {
     private int numero;
     private String matricula;
+    private String modelo;
 
-    public Coche(int numero, String matricula) {
+    public Coche(int numero, String matricula, String modelo) {
         this.numero = numero;
         this.matricula = matricula;
+        this.modelo = modelo;
     }
 
     public int getNumero() {
@@ -32,5 +34,12 @@ public class Coche {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-    
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 }
